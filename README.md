@@ -4,6 +4,11 @@
 
 ## Tech-Stack
 
+(Server)
+
+- [ollama](https://github.com/ollama/ollama)
+  <!--TODO: figure out best llm to use that is not too slow-->
+
 (Python)
 
 - [RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) for Speech-To-Text
@@ -11,7 +16,7 @@
 
 (Zig)
 
-- [ollama-zig](https://github.com/tr1ckydev/ollama-zig) for IO to local LLM
+- [http.zig](https://github.com/karlseguin/http.zig) for RESTful API calls to ollama
 
 <!--TODO: Find Text-To-Speech library-->
 <!--A tip I learned from a video is to pass the past few sentences of the back
@@ -20,7 +25,9 @@ remember the context.-->
 
 ## Installation
 
-must create a virtual environment with python 3.11
+- install ollama
+
+- must create a virtual environment with python 3.11
 
 ```bash
 mkdir ai_w
@@ -29,4 +36,8 @@ python3.11 -m venv venv
 source venv/bin/activate
 ```
 
-continue installing RealtimeSTT
+- continue installing RealtimeSTT
+
+## TODO
+
+- Implent a good abstraction from making restful API calls to local ollama
