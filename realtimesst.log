@@ -1,0 +1,506 @@
+2025-01-06 20:42:06.456 - RealTimeSTT: root - INFO - Starting RealTimeSTT
+2025-01-06 20:42:06.530 - RealTimeSTT: root - INFO - Initializing faster_whisper main transcription model tiny
+2025-01-06 20:42:06.530 - RealTimeSTT: root - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-01-06 20:42:06.530 - RealTimeSTT: root - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-01-06 20:42:06.530 - RealTimeSTT: root - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-01-06 20:42:06.604 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-06 20:42:06.785 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Systran/faster-whisper-tiny/revision/main HTTP/1.1" 200 1848
+2025-01-06 20:42:06.792 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-06 20:42:06.793 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-06 20:42:06.794 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-06 20:42:06.795 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-06 20:42:06.938 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Systran/faster-whisper-tiny/resolve/d90ca5fe260221311c53c58e660288d3deb8d356/model.bin HTTP/1.1" 302 0
+2025-01-06 20:42:06.939 - RealTimeSTT: filelock - DEBUG - Attempting to acquire lock 127112673000144 on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/dcb76c6586fc06cbdac6dd21f14cfd129cc4cdd9dce19bf4ffa62e59cbe6e6d1.lock
+2025-01-06 20:42:06.939 - RealTimeSTT: filelock - DEBUG - Lock 127112673000144 acquired on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/dcb76c6586fc06cbdac6dd21f14cfd129cc4cdd9dce19bf4ffa62e59cbe6e6d1.lock
+2025-01-06 20:42:06.940 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn-lfs-us-1.hf.co:443
+2025-01-06 20:42:06.942 - RealTimeSTT: root - INFO - Microphone connected and validated (input_device_index: 22)
+2025-01-06 20:42:06.942 - RealTimeSTT: root - DEBUG - Audio recording initialized successfully at 16000 Hz, reading 1024 frames at a time
+2025-01-06 20:42:06.970 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Systran/faster-whisper-tiny/resolve/d90ca5fe260221311c53c58e660288d3deb8d356/config.json HTTP/1.1" 200 0
+2025-01-06 20:42:06.970 - RealTimeSTT: filelock - DEBUG - Attempting to acquire lock 127112672752080 on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/3baa18e2b321a2f489614607852a729fcd516480.lock
+2025-01-06 20:42:06.970 - RealTimeSTT: filelock - DEBUG - Lock 127112672752080 acquired on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/3baa18e2b321a2f489614607852a729fcd516480.lock
+2025-01-06 20:42:06.972 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Systran/faster-whisper-tiny/resolve/d90ca5fe260221311c53c58e660288d3deb8d356/vocabulary.txt HTTP/1.1" 200 0
+2025-01-06 20:42:06.973 - RealTimeSTT: filelock - DEBUG - Attempting to acquire lock 127112672919248 on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/c9074644d9d1205686f16d411564729461324b75.lock
+2025-01-06 20:42:06.973 - RealTimeSTT: filelock - DEBUG - Lock 127112672919248 acquired on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/c9074644d9d1205686f16d411564729461324b75.lock
+2025-01-06 20:42:06.977 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Systran/faster-whisper-tiny/resolve/d90ca5fe260221311c53c58e660288d3deb8d356/tokenizer.json HTTP/1.1" 200 0
+2025-01-06 20:42:06.977 - RealTimeSTT: filelock - DEBUG - Attempting to acquire lock 127112672910928 on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/7818adb6de9fa3064d3ff81226fdd675be1f6344.lock
+2025-01-06 20:42:06.977 - RealTimeSTT: filelock - DEBUG - Lock 127112672910928 acquired on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/7818adb6de9fa3064d3ff81226fdd675be1f6344.lock
+2025-01-06 20:42:07.069 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /Systran/faster-whisper-tiny/resolve/d90ca5fe260221311c53c58e660288d3deb8d356/config.json HTTP/1.1" 200 2249
+2025-01-06 20:42:07.070 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /Systran/faster-whisper-tiny/resolve/d90ca5fe260221311c53c58e660288d3deb8d356/vocabulary.txt HTTP/1.1" 200 459861
+2025-01-06 20:42:07.071 - RealTimeSTT: filelock - DEBUG - Attempting to release lock 127112672752080 on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/3baa18e2b321a2f489614607852a729fcd516480.lock
+2025-01-06 20:42:07.071 - RealTimeSTT: filelock - DEBUG - Lock 127112672752080 released on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/3baa18e2b321a2f489614607852a729fcd516480.lock
+2025-01-06 20:42:07.088 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /Systran/faster-whisper-tiny/resolve/d90ca5fe260221311c53c58e660288d3deb8d356/tokenizer.json HTTP/1.1" 200 2203239
+2025-01-06 20:42:07.120 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://cdn-lfs-us-1.hf.co:443 "GET /repos/c3/94/c394d9c1034405d7a5fe191992713275237434c7e3bffc5d1345b8134541707f/dcb76c6586fc06cbdac6dd21f14cfd129cc4cdd9dce19bf4ffa62e59cbe6e6d1?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.bin%3B+filename%3D%22model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1736482131&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczNjQ4MjEzMX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zL2MzLzk0L2MzOTRkOWMxMDM0NDA1ZDdhNWZlMTkxOTkyNzEzMjc1MjM3NDM0YzdlM2JmZmM1ZDEzNDViODEzNDU0MTcwN2YvZGNiNzZjNjU4NmZjMDZjYmRhYzZkZDIxZjE0Y2ZkMTI5Y2M0Y2RkOWRjZTE5YmY0ZmZhNjJlNTljYmU2ZTZkMT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=hHXcF19g99sDX31n4z35c~3fHmgALsGuqCkPxNB-boQ5XvoEcSKVVh9B4e5ZSIlNQiDzNGKfqoO1SGnK9pdYkre-5O46jI30moqt3tIm23gE4Dm1PKVkCKL4Ugw9-ffGOQAelIsLCXVNgNbEqgwzlK6YM-OmrFfiJIJhSs54eVHLbZie1W-P3Ci9as5DP-tZMYOAI3wmgzVsN4pWW9v5ZRdfZLR3nDO8b~SS-sOjKAzCiGx25EH32V6t~X64ephU8h9WflKdLmvVGoJzm-fx5feBe5Lty9iY61nCZasmDQdMfX5YcSlLIZmcPCVj6mJ~faZji6wizLl6KvDf7TOR~A__&Key-Pair-Id=K24J24Z295AEI9 HTTP/1.1" 200 75538270
+2025-01-06 20:42:07.385 - RealTimeSTT: filelock - DEBUG - Attempting to release lock 127112672919248 on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/c9074644d9d1205686f16d411564729461324b75.lock
+2025-01-06 20:42:07.385 - RealTimeSTT: filelock - DEBUG - Lock 127112672919248 released on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/c9074644d9d1205686f16d411564729461324b75.lock
+2025-01-06 20:42:07.581 - RealTimeSTT: filelock - DEBUG - Attempting to release lock 127112672910928 on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/7818adb6de9fa3064d3ff81226fdd675be1f6344.lock
+2025-01-06 20:42:07.581 - RealTimeSTT: filelock - DEBUG - Lock 127112672910928 released on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/7818adb6de9fa3064d3ff81226fdd675be1f6344.lock
+2025-01-06 20:42:08.029 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:09.050 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:10.074 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:11.098 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:12.122 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:13.147 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:14.171 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:15.195 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:16.219 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:17.180 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg6
+2025-01-06 20:42:17.181 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.11/ctypes/__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.58: cannot open shared object file: No such file or directory
+2025-01-06 20:42:17.181 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg5
+2025-01-06 20:42:17.182 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.11/ctypes/__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+2025-01-06 20:42:17.182 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg4
+2025-01-06 20:42:17.207 - RealTimeSTT: torio._extension.utils - DEBUG - Successfully loaded FFmpeg4
+2025-01-06 20:42:17.262 - RealTimeSTT: root - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-01-06 20:42:17.263 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:17.263 - RealTimeSTT: root - WARNING - Audio queue size exceeds latency limit. Current size: 321. Discarding old audio chunks.
+2025-01-06 20:42:17.263 - RealTimeSTT: root - DEBUG - Starting realtime worker
+2025-01-06 20:42:17.264 - RealTimeSTT: root - DEBUG - Waiting for main transcription model to start
+2025-01-06 20:42:18.267 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:18.788 - RealTimeSTT: filelock - DEBUG - Attempting to release lock 127112673000144 on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/dcb76c6586fc06cbdac6dd21f14cfd129cc4cdd9dce19bf4ffa62e59cbe6e6d1.lock
+2025-01-06 20:42:18.788 - RealTimeSTT: filelock - DEBUG - Lock 127112673000144 released on /home/reign/.cache/huggingface/hub/.locks/models--Systran--faster-whisper-tiny/dcb76c6586fc06cbdac6dd21f14cfd129cc4cdd9dce19bf4ffa62e59cbe6e6d1.lock
+2025-01-06 20:42:19.036 - RealTimeSTT: root - DEBUG - Faster_whisper main speech to text transcription model initialized successfully
+2025-01-06 20:42:19.039 - RealTimeSTT: root - DEBUG - Main transcription model ready
+2025-01-06 20:42:19.040 - RealTimeSTT: root - DEBUG - RealtimeSTT initialization completed successfully
+2025-01-06 20:42:19.040 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:42:19.040 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:42:19.040 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:42:19.292 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:20.316 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:21.340 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:22.364 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:23.388 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:24.412 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:25.436 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:26.460 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:27.485 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:28.509 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:29.533 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:30.557 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:31.581 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:32.605 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:33.629 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:34.654 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:35.678 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:36.702 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:37.726 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:38.750 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:39.775 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:40.799 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:41.823 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:42.847 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:43.871 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:44.895 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:45.919 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:46.943 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:47.968 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:48.992 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:50.016 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:51.040 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:52.064 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:53.088 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:54.112 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:55.137 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:56.161 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:57.185 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:58.209 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:42:59.233 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:00.257 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:01.282 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:02.306 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:03.330 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:04.354 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:05.378 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:06.402 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:07.426 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:08.451 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:09.475 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:10.499 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:11.523 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:12.547 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:13.571 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:14.595 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:15.619 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:16.644 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:17.668 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:18.692 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:19.716 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:20.740 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:21.764 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:22.788 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:23.813 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:24.837 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:25.861 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:26.885 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:27.909 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:28.933 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:29.958 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:30.982 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:32.006 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:33.030 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:34.054 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:35.078 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:36.102 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:37.126 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:38.151 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:39.175 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:40.199 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:41.223 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:42.247 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:43.271 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:44.295 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:45.320 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:46.344 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:47.368 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:48.392 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:49.416 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:50.440 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:51.465 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:52.489 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:53.513 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:54.537 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:55.561 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:56.585 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:57.609 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:58.633 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:43:59.658 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:00.682 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:01.706 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:02.730 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:03.754 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:04.778 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:05.802 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:06.827 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:07.851 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:08.875 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:09.899 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:10.923 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:11.947 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:12.972 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:13.996 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:15.020 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:16.044 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:17.068 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:18.092 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:19.116 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:20.140 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:21.165 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:22.189 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:23.234 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:24.267 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:25.293 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:26.316 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:27.340 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:28.278 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-06 20:44:28.278 - RealTimeSTT: root - INFO - recording started
+2025-01-06 20:44:28.278 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-06 20:44:28.278 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-06 20:44:28.363 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:29.387 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:29.473 - RealTimeSTT: root - INFO - recording stopped
+2025-01-06 20:44:29.473 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-06 20:44:29.538 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-06 20:44:29.539 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-06 20:44:29.539 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-06 20:44:29.558 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-06 20:44:29.784 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.33
+2025-01-06 20:44:29.809 - RealTimeSTT: root - DEBUG - Final text detected with main model: Huh?
+2025-01-06 20:44:29.810 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 0.27 seconds
+2025-01-06 20:44:29.810 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:44:29.810 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:44:29.810 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:44:30.411 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:31.435 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:32.459 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:32.545 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-06 20:44:32.545 - RealTimeSTT: root - INFO - recording started
+2025-01-06 20:44:32.545 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-06 20:44:32.545 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-06 20:44:33.484 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:33.910 - RealTimeSTT: root - INFO - recording stopped
+2025-01-06 20:44:33.911 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-06 20:44:33.963 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-06 20:44:33.964 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-06 20:44:33.964 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-06 20:44:33.987 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.92
+2025-01-06 20:44:33.996 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-06 20:44:34.008 - RealTimeSTT: root - DEBUG - Final text detected with main model: Hello, what is your name?
+2025-01-06 20:44:34.009 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 0.04 seconds
+2025-01-06 20:44:34.009 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:44:34.009 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:44:34.009 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:44:34.508 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:35.532 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:36.556 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:37.580 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:38.604 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:39.628 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:40.653 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:41.677 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:42.701 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:43.725 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:44.749 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:45.773 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:46.797 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:47.822 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:48.846 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:49.870 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:50.894 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:51.864 - RealTimeSTT: root - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-01-06 20:44:51.864 - RealTimeSTT: root - DEBUG - Finishing recording thread
+2025-01-06 20:44:51.864 - RealTimeSTT: root - DEBUG - Terminating reader process
+2025-01-06 20:44:51.918 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:44:51.925 - RealTimeSTT: root - DEBUG - Terminating transcription process
+2025-01-06 20:44:51.940 - RealTimeSTT: root - DEBUG - Finishing realtime thread
+2025-01-06 20:44:51.989 - RealTimeSTT: root - INFO - KeyboardInterrupt in text() method
+2025-01-06 20:44:58.359 - RealTimeSTT: root - INFO - Starting RealTimeSTT
+2025-01-06 20:44:58.434 - RealTimeSTT: root - INFO - Initializing faster_whisper main transcription model tiny
+2025-01-06 20:44:58.434 - RealTimeSTT: root - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-01-06 20:44:58.434 - RealTimeSTT: root - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-01-06 20:44:58.434 - RealTimeSTT: root - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-01-06 20:44:58.508 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-06 20:44:58.751 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Systran/faster-whisper-tiny/revision/main HTTP/1.1" 200 1848
+2025-01-06 20:44:58.845 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg6
+2025-01-06 20:44:58.845 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.11/ctypes/__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.58: cannot open shared object file: No such file or directory
+2025-01-06 20:44:58.846 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg5
+2025-01-06 20:44:58.846 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/reign/dev/personal/ai_w/venv/lib/python3.11/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.11/ctypes/__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+2025-01-06 20:44:58.846 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg4
+2025-01-06 20:44:58.859 - RealTimeSTT: torio._extension.utils - DEBUG - Successfully loaded FFmpeg4
+2025-01-06 20:44:58.873 - RealTimeSTT: root - INFO - Microphone connected and validated (input_device_index: 23)
+2025-01-06 20:44:58.873 - RealTimeSTT: root - DEBUG - Audio recording initialized successfully at 16000 Hz, reading 1024 frames at a time
+2025-01-06 20:44:58.926 - RealTimeSTT: root - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-01-06 20:44:58.969 - RealTimeSTT: root - DEBUG - Starting realtime worker
+2025-01-06 20:44:58.970 - RealTimeSTT: root - DEBUG - Waiting for main transcription model to start
+2025-01-06 20:44:58.993 - RealTimeSTT: root - DEBUG - Faster_whisper main speech to text transcription model initialized successfully
+2025-01-06 20:44:58.993 - RealTimeSTT: root - DEBUG - Main transcription model ready
+2025-01-06 20:44:58.996 - RealTimeSTT: root - DEBUG - RealtimeSTT initialization completed successfully
+2025-01-06 20:44:58.996 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:44:58.996 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:44:58.997 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:44:59.972 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:00.998 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:02.022 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:03.046 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:03.472 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-06 20:45:03.472 - RealTimeSTT: root - INFO - recording started
+2025-01-06 20:45:03.472 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-06 20:45:03.472 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-06 20:45:04.069 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:04.667 - RealTimeSTT: root - INFO - recording stopped
+2025-01-06 20:45:04.667 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-06 20:45:04.680 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-06 20:45:04.681 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-06 20:45:04.681 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-06 20:45:04.752 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-06 20:45:04.860 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.90
+2025-01-06 20:45:04.888 - RealTimeSTT: root - DEBUG - Final text detected with main model: What is your name?
+2025-01-06 20:45:04.888 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 0.21 seconds
+2025-01-06 20:45:04.888 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:45:04.888 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:45:04.889 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:45:05.093 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:06.117 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:07.141 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:08.165 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:09.190 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:10.214 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:11.238 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:12.262 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:13.286 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:14.310 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:15.334 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:16.359 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:17.383 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:18.151 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-06 20:45:18.151 - RealTimeSTT: root - INFO - recording started
+2025-01-06 20:45:18.151 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-06 20:45:18.151 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-06 20:45:18.407 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:19.346 - RealTimeSTT: root - INFO - recording stopped
+2025-01-06 20:45:19.346 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-06 20:45:19.427 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-06 20:45:19.428 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-06 20:45:19.428 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-06 20:45:19.431 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:19.431 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-06 20:45:19.449 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.90
+2025-01-06 20:45:19.465 - RealTimeSTT: root - DEBUG - Final text detected with main model: Just thing testing.
+2025-01-06 20:45:19.466 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 0.04 seconds
+2025-01-06 20:45:19.466 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:45:19.466 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:45:19.466 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:45:20.455 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:21.479 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:22.503 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:23.528 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:24.552 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:25.405 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-06 20:45:25.405 - RealTimeSTT: root - INFO - recording started
+2025-01-06 20:45:25.405 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-06 20:45:25.406 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-06 20:45:25.576 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:26.600 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:26.600 - RealTimeSTT: root - INFO - recording stopped
+2025-01-06 20:45:26.601 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-06 20:45:26.687 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-06 20:45:26.688 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-06 20:45:26.688 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-06 20:45:26.711 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.78
+2025-01-06 20:45:26.725 - RealTimeSTT: root - DEBUG - Final text detected with main model: Testing.
+2025-01-06 20:45:26.725 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-06 20:45:26.738 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 0.05 seconds
+2025-01-06 20:45:26.738 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:45:26.738 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:45:26.739 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:45:27.624 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:28.648 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:29.673 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:30.611 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-06 20:45:30.612 - RealTimeSTT: root - INFO - recording started
+2025-01-06 20:45:30.612 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-06 20:45:30.612 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-06 20:45:30.697 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:31.721 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:32.062 - RealTimeSTT: root - INFO - recording stopped
+2025-01-06 20:45:32.063 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-06 20:45:32.123 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-06 20:45:32.123 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-06 20:45:32.123 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-06 20:45:32.140 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.87
+2025-01-06 20:45:32.148 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-06 20:45:32.156 - RealTimeSTT: root - DEBUG - Final text detected with main model: Testing testing testing
+2025-01-06 20:45:32.156 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 0.03 seconds
+2025-01-06 20:45:32.157 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:45:32.157 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:45:32.157 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:45:32.745 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:33.769 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:34.793 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:35.818 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:36.842 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:37.866 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:38.890 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:39.658 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-06 20:45:39.658 - RealTimeSTT: root - INFO - recording started
+2025-01-06 20:45:39.658 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-06 20:45:39.659 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-06 20:45:39.914 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:40.853 - RealTimeSTT: root - INFO - recording stopped
+2025-01-06 20:45:40.853 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-06 20:45:40.938 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:40.940 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-06 20:45:40.941 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-06 20:45:40.941 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-06 20:45:40.970 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.97
+2025-01-06 20:45:40.992 - RealTimeSTT: root - DEBUG - Final text detected with main model: I'm testing to see if this works.
+2025-01-06 20:45:40.993 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-06 20:45:41.021 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 0.08 seconds
+2025-01-06 20:45:41.022 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:45:41.022 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:45:41.022 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:45:41.963 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:42.987 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:44.011 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:44.608 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-06 20:45:44.608 - RealTimeSTT: root - INFO - recording started
+2025-01-06 20:45:44.608 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-06 20:45:44.609 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-06 20:45:45.035 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:45.803 - RealTimeSTT: root - INFO - recording stopped
+2025-01-06 20:45:45.803 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-06 20:45:45.855 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-06 20:45:45.855 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-06 20:45:45.856 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-06 20:45:45.884 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.94
+2025-01-06 20:45:45.889 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-06 20:45:45.902 - RealTimeSTT: root - DEBUG - Final text detected with main model: It's wrinkle.
+2025-01-06 20:45:45.902 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 0.05 seconds
+2025-01-06 20:45:45.903 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:45:45.903 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:45:45.903 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:45:46.059 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:47.083 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:48.107 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:48.961 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-06 20:45:48.961 - RealTimeSTT: root - INFO - recording started
+2025-01-06 20:45:48.961 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-06 20:45:48.961 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-06 20:45:49.132 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:50.156 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:50.156 - RealTimeSTT: root - INFO - recording stopped
+2025-01-06 20:45:50.156 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-06 20:45:50.243 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-06 20:45:50.244 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-06 20:45:50.244 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-06 20:45:50.259 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.97
+2025-01-06 20:45:50.278 - RealTimeSTT: root - DEBUG - Final text detected with main model: That's pretty cool.
+2025-01-06 20:45:50.278 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-06 20:45:50.324 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 0.08 seconds
+2025-01-06 20:45:50.324 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-06 20:45:50.324 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-06 20:45:50.325 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-06 20:45:51.180 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:52.204 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:53.228 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:54.252 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:55.276 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-06 20:45:56.212 - RealTimeSTT: root - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-01-06 20:45:56.212 - RealTimeSTT: root - DEBUG - Finishing recording thread
+2025-01-06 20:45:56.215 - RealTimeSTT: root - DEBUG - Terminating reader process
+2025-01-06 20:45:56.221 - RealTimeSTT: root - DEBUG - Terminating transcription process
+2025-01-06 20:45:56.296 - RealTimeSTT: root - DEBUG - Finishing realtime thread
+2025-01-06 20:45:56.344 - RealTimeSTT: root - INFO - KeyboardInterrupt in text() method
