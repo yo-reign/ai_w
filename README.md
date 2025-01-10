@@ -23,7 +23,9 @@ generally entertaining.
 (Python)
 
 - [RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) for Speech-To-Text
-  - With GPU support (CUDA)
+  - With CUDA support
+- [RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) for Text-To-Speech
+  - With CUDA support
 
 <!--TODO: Find Text-To-Speech library-->
 <!--A tip I learned from a video is to pass the past few sentences of the back

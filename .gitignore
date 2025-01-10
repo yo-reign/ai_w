@@ -2,3 +2,4 @@ venv/
 .zig-cache/
 zig-out/
 realtimesst.log
+realtimetts.log
