@@ -2,6 +2,12 @@
 
 ## Idea
 
+I want an AI co-streaming partner (similar to vedals's neuro-sama) that can
+take in my voice as input and output either a text or audio speech response. I
+want it to also possibly take intermitted screenshots of my screen and take
+them as input to the AI. The AI must be able to stay in character and be
+generally entertaining.
+
 ## Tech-Stack
 
 (Server)
@@ -18,10 +24,6 @@
 
 - [RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) for Speech-To-Text
   - With GPU support (CUDA)
-
-(Zig)
-
-- [http.zig](https://github.com/karlseguin/http.zig) for RESTful API calls to ollama
 
 <!--TODO: Find Text-To-Speech library-->
 <!--A tip I learned from a video is to pass the past few sentences of the back
