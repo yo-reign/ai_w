@@ -27,6 +27,8 @@ generally entertaining.
 - [RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) for Text-To-Speech
   - With CUDA support
 
+- [deepspeed]
+
 <!--TODO: Find Text-To-Speech library-->
 <!--A tip I learned from a video is to pass the past few sentences of the back
 and forth conversation back to the LLM when prompting it as it helps it to

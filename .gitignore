@@ -3,3 +3,5 @@ venv/
 zig-out/
 realtimesst.log
 realtimetts.log
+models/
+voices/
