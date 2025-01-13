@@ -1,7 +1,6 @@
 venv/
-.zig-cache/
-zig-out/
 realtimesst.log
 realtimetts.log
 models/
 voices/
+src/__pycache__/

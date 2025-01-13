@@ -26,6 +26,7 @@ generally entertaining.
   - With CUDA support
 - [RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) for Text-To-Speech
   - With CUDA support
+- [mss](https://github.com/BoboTiG/python-mss) for capturing screenshots
 
 - [deepspeed]
 
