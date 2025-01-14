@@ -6,7 +6,7 @@ import random
 import regular_model
 import multimodal_model
 
-config = Config(ModelType.MULTIMODAL, "Reign", "Azula", 1.0)
+config = Config(ModelType.REGULAR, "Reign", "Azula", 1.0)
 
 def process_text(text: str):
     roll = random.random()
@@ -45,7 +45,7 @@ if __name__ == '__main__':
         voice="/home/reign/dev/personal/ai_w/voices/Dark Souls III - Fire Keeper Voice Set_formatted.wav",
         #voice="/home/reign/dev/personal/ai_w/voices/Avatar_ The Last Airbender - The Burning Earth - Azula voice clips_formatted.wav",
 
-        device="cpu", # Set to "cuda" to use CUDA (cost more cuda memory)
+        #device="cpu", # Set to "cuda" to use CUDA (cost more cuda memory)
         language="en",
         speed=1.25,
         use_deepspeed=True,
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
     # Initialize the speech recognition engine
     recorder = AudioToTextRecorder(
-        device="cpu", # Set to "cuda" to use CUDA (cost more cuda memory)
+        #device="cpu", # Set to "cuda" to use CUDA (cost more cuda memory)
         language="en",
         post_speech_silence_duration=.75,
     )
